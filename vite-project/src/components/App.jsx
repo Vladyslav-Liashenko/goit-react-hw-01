@@ -5,7 +5,6 @@ import { Profile } from './Profile/Profile';
 import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory.style';
 
-
 function App() {
   return (
     <>
