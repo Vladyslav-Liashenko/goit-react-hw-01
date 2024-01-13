@@ -18,6 +18,7 @@ function App() {
       <FriendList friends={friends} />
       <TransactionHistory items={transaction}/>
     </>
+
   )
 }
 
