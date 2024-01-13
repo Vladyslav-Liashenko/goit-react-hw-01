@@ -16,9 +16,8 @@ function App() {
         stats={userData.stats}
       />
       <FriendList friends={friends} />
-      <TransactionHistory items={transaction}/>
+      <TransactionHistory items={transaction} />
     </>
-  )
+  );
 }
-
-export default App
+export default App;
