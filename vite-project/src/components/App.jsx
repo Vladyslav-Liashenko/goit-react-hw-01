@@ -5,6 +5,7 @@ import { Profile } from './Profile/Profile';
 import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
+
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
       <FriendList friends={friends} />
       <TransactionHistory items={transaction}/>
     </>
+   
   );
 }
 
