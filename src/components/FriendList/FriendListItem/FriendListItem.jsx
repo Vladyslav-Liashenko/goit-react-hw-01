@@ -1,9 +1,18 @@
+import '../FriendList.css'
 export const FriendListItem = ({ isOnline, name, avatar }) => {
+
+  const statusClasses = ['status'];
+  if (isOnline) {
+    statusClasses.push('is-active');
+  }else {
+    statusClasses.push('is-retired');
+  }
+  
   return (
     <div className="item">
-      <img className="avatar" src={avatar} alt="Avatar" width="48" />
-      <p className="name">{name}</p>
-      <p className="status">{isOnline ? 'Online' : 'Offline'}</p>
+      <img className="avatar" src={avatar} alt="Avatar" width="108" />
+      <p className="name_friend">{name}</p>
+      <p className={statusClasses.join(' ')}>{isOnline ? 'Online' : 'Offline'}</p>
     </div>
   );
 };

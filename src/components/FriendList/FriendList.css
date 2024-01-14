@@ -1,0 +1,27 @@
+.friend-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 750px;
+  margin: auto;
+}
+.friend-list-li {
+  border: 3px solid;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.name_friend {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.status {
+  margin-top: 5px;
+}
+.status.is-active {
+    color: green;
+}
+.status.is-retired {
+    color: brown;
+}
