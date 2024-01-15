@@ -1,4 +1,8 @@
-.transaction-history {
+.container {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.transaction_history {
   max-width: 750px;
   margin: auto;
   display: flex;

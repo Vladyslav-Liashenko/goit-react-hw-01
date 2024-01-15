@@ -1,18 +1,18 @@
-import '../FriendList.css'
+import styles from'../FriendList.module.css'
 export const FriendListItem = ({ isOnline, name, avatar }) => {
 
-  const statusClasses = ['status'];
+  const statusClasses = [styles.status];
   if (isOnline) {
-    statusClasses.push('is-active');
+    statusClasses.push(styles.is_active);
   }else {
-    statusClasses.push('is-retired');
+    statusClasses.push(styles.is_retired);
   }
   
   return (
-    <div className="item">
-      <img className="avatar" src={avatar} alt="Avatar" width="108" />
-      <p className="name_friend">{name}</p>
-      <p className={statusClasses.join(' ')}>{isOnline ? 'Online' : 'Offline'}</p>
+    <div className={styles.item}>
+      <img className={styles.avatar} src={avatar} alt="Avatar" width="108" />
+      <p className={styles.name_friend}>{name}</p>
+      <p className={statusClasses.join(' ')}>{isOnline ? styles.Online : styles.Offline}</p>
     </div>
   );
 };

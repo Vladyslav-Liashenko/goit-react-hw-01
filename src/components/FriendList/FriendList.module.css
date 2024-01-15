@@ -1,11 +1,14 @@
-.friend-list {
+.container{
+  margin-top: 120px;
+}
+.friend_list {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
   max-width: 750px;
   margin: auto;
 }
-.friend-list-li {
+.friend_list_li {
   border: 3px solid;
   border-radius: 10px;
   text-align: center;
@@ -19,9 +22,9 @@
 .status {
   margin-top: 5px;
 }
-.status.is-active {
+.status.is_active {
     color: green;
 }
-.status.is-retired {
+.status.is_retired {
     color: brown;
 }
